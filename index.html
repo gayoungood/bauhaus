@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김정운의 '바우하우스 이야기'</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    font-style: normal;}
+    
+
+    .box01{
+        width: 100%;
+        height: 692px;
+    }
+    .sbox01{
+        width: 999px;
+        height: 692px;
+        margin: 0 auto;
+        background-image: url(images/bg01.png);
+    }
+    .txtbox{
+        width: 651px;
+        height: 205px;
+        background-color: black;
+        color: white;
+        font-size: 70px;
+        position: relative;
+        top: 439px;
+        left: 23px;
+    }
+    .title{
+        display: block;
+        padding-left: 28px;
+        padding-top: 11px;
+    }
+
+    .box02{
+        width: 100%;
+        height: 539px;
+    }
+    .sbox02{
+        width: 999px;
+        height: 539px;
+        margin: 0 auto;
+        background-image: url(images/bg02.png);
+    }
+    .box02_wrap{
+        width: 999px;
+        height: 539px;
+        margin: 0 auto;
+        position: absolute;
+    }
+    .txtbox02{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title02{
+        display: block;
+        top: 25px;
+        left: 403px;
+        position: relative;
+        font-size: 35px;
+    }
+    .txtbox002{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title002{
+        display: block;
+        left: 403px;
+        top: 84px;
+        position: relative;
+        font-size: 18px;
+    }
+    .box03{
+        width: 100%;
+        height: 692px;
+    }
+    .sbox03{
+        width: 999px;
+        height: 692px;
+        margin: 0 auto;
+        background-image: url(images/bg03.png)
+    }
+    .box03_wrap{
+        width: 999px;
+        height: 692px;
+        margin: 0 auto;
+        position: absolute;
+    }
+    .txtbox03{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title03{
+        display: block;
+        left: 46px;
+        top: 57px;
+        font-size: 45px;
+        position: relative;
+    }
+    .txtbox031{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title031{
+        display: block;
+        left: 375px;
+        top: 284px;
+        font-size: 30px;
+        position: relative;
+    }
+    .txtbox032{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title032{
+        display: block;
+        left: 664px;
+        top: 620px;
+        font-size: 30px;
+        position: relative;
+    }
+        
+    .box04{
+        width: 100%;
+        height: 517px;
+    }
+    .sbox04{
+        width: 999px;
+        height: 517px;
+        margin: 0 auto;
+    }
+    .box04_wrap{
+        width: 999px;
+        height: 517px;
+        margin: 0 auto;
+        position: absolute;
+        background-image: url(images/bg04.png);
+    }
+    .txtbox04{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title04{
+        display: block;
+        left: 100px;
+        top: 58px;
+        position: relative;
+        font-size: 18px;
+    }
+
+    .box05{
+        width: 100%;
+        height: 518px;
+        border-color: brown;
+    }
+    .sbox05{
+        width: 999px;
+        height: 518px;
+        margin: 0 auto;
+        background-image: url(images/bg05.png);
+    }
+    .box05_wrap{
+        width: 999px;
+        height: 518px;
+        margin: 0 auto;
+        position: absolute;
+    }
+    .txtbox05{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title05{
+        display: block;
+        left: 352px;
+        top: 60px;
+        position: relative;
+        font-size: 18px;
+    }
+    .txtbox005{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title005{
+        display: block;
+        left: 444px;
+        top: 266px;
+        position: relative;
+        font-size: 18px;
+    }
+    .box06{
+        width: 100%;
+        height: 518px;
+    }
+    .sbox06{
+        width: 999px;
+        height: 518px;
+        margin: 0 auto;
+        background-image: url(images/bg06.png);
+    }
+    .box06_wrap{
+        width: 999px;
+        height: 539px;
+        margin: 0 auto;
+        position: absolute;
+    }
+
+    /* 소니에서 바우하우스로 */
+    .txtbox06{
+        margin: 0 auto;
+        position: absolute;
+        background-image: url(images/tx06.png)
+    }
+    .title06{ 
+        display: block;
+        top: 20px;
+        left: 20px;
+        position: relative;
+        font-size: 45px;
+    }
+
+
+    .txtbox061{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title061{ 
+        display: block;
+        top: 205px;
+        left: 237px;
+        position: relative;
+        font-size: 16px;
+    }
+
+    .txtbox062{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title062{ 
+        display: block;
+        top: 276px;
+        left: 237px;
+        position: relative;
+        font-size: 30px;
+    }
+    .txtbox063{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title063{ 
+        display: block;
+        top: 313px;
+        left: 179px;
+        position: relative;
+        font-size: 14px;
+    }
+
+
+
+    .txtbox064{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title064{ 
+        display: block;
+        top: 35px;
+        left: 365px;
+        position: relative;
+        font-size: 14px;
+    }
+    .txtbox065{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title065{ 
+        display: block;
+        top: 148px;
+        left: 394px;
+        position: relative;
+        font-size: 30px;
+    }
+    .txtbox066{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title066{ 
+        display: block;
+        top: 205px;
+        left: 447px;
+        position: relative;
+        font-size: 16px;
+    }
+
+
+
+    .txtbox067{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title067{ 
+        display: block;
+        top: 205px;
+        left: 609px;
+        position: relative;
+        font-size: 16px;
+    }
+    .txtbox068{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title068{ 
+        display: block;
+        top: 276px;
+        left: 672px;
+        position: relative;
+        font-size: 30px;
+    }
+    .txtbox069{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title069{ 
+        display: block;
+        top: 313px;
+        left: 536px;
+        position: relative;
+        font-size: 14px;
+    }
+
+
+    .txtbox0610{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title0610{ 
+        display: block;
+        top: 53px;
+        left: 748px;
+        position: relative;
+        font-size: 12px;
+    }
+    .txtbox0611{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title0611{ 
+        display: block;
+        top: 148px;
+        left: 870px;
+        position: relative;
+        font-size: 30px;
+    }
+    .txtbox0612{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title0612{ 
+        display: block;
+        top: 205px;
+        left: 830px;
+        position: relative;
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+    .box07{
+        width: 100%;
+        height: 422px;
+    }
+    .sbox07{
+        width: 999px;
+        height: 422px;
+        margin: 0 auto;
+        background-image: url(images/bg07.png);
+    }
+    .box07_wrap{
+        width: 999px;
+        height: 539px;
+        margin: 0 auto;
+        position: absolute;
+    }
+    .txtbox07{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title07{
+        display: block;
+        left: 355px;
+        top: 53px;
+        font-size: 18px;
+        position: relative;
+    }
+
+    .box08{
+        width: 100%;
+        height: 572px;
+    }
+    .sbox08{
+        width: 999px;
+        height: 572px;
+        margin: 0 auto;
+        background-image: url(images/bg08.png);
+    }
+    .box08_wrap{
+        width: 999px;
+        height: 539px;
+        margin: 0 auto;
+        position: absolute
+    }
+    .txtbox08{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title08{
+        display: block;
+        left: 13px;
+        top: 68px;
+        font-size: 19px;
+        position: relative;
+    }
+
+    .box09{
+        width: 100%;
+        height: 447px;
+    }
+    .sbox09{
+        width: 999px;
+        height: 447px;
+        margin: 0 auto;
+        background-image: url(images/bg09.png);
+    }
+    .box09_wrap{
+        width: 999px;
+        height: 539px;
+        margin: 0 auto;
+        position: absolute;
+    }
+    .txtbox09{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title09{
+        display: block;
+        left: 330px;
+        top: 86px;
+        font-size: 19px;
+        position: relative;
+    }
+
+    .box10{
+        width: 100%;
+        height: 451px;
+    }
+    .sbox10{
+        width: 999px;
+        height: 451px;
+        margin: 0 auto;
+        background-image: url(images/bg10.png);
+    }
+    .box10_wrap{
+        width: 999px;
+        height: 539px;
+        margin: 0 auto;
+        position: absolute;
+    }
+    .txtbox10{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title10{
+        display: block;
+        left: 52px;
+        top: 99px;
+        font-size: 20px;
+        position: relative;
+    }
+    .box11{
+        width: 100%;
+        height: 699px;
+    }
+    .sbox11{
+        width: 999px;
+        height: 699px;
+        margin: 0 auto;
+        background-image: url(images/bg11.png);
+    }
+    .box11_wrap{
+        width: 999px;
+        height: 539px;
+        margin: 0 auto;
+        position: absolute;
+    }
+    .txtbox11{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title11{
+        display: block;
+        left: 163px;
+        top: 82px;
+        font-size: 65px;
+        position: relative;
+    }
+    .txtbox111{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title111{
+        display: block;
+        left: 48px;
+        top: 285px;
+        font-size: 19px;
+        position: relative;
+    }
+    .title112{
+        display: block;
+        left: 48px;
+        top: 50px;
+        font-size: 18px;
+        position: relative;
+    }
+
+    .box12{
+        width: 100%;
+        height: 242px;
+    }
+    .sbox12{
+        width: 999px;
+        height: 242px;
+        margin: 0 auto;
+        background-image: url(images/bg12.png);
+    }
+    .box12_wrap{
+        width: 999px;
+        height: 539px;
+        margin: 0 auto;
+        position: absolute;
+    }
+    .txtbox12{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title12{
+        display: block;
+        left: 48px;
+        top: 29px;
+        font-size: 30px;
+        position: relative;
+    }
+    .txtbox121{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title121{
+        display: block;
+        left: 48px;
+        top: 99px;
+        font-size: 19px;
+        position: relative;
+    }
+    .box13{
+        width: 100%;
+        height: 80px;
+        background-color: black;
+    }
+    .sbox13{
+        width: 999px;
+        height: 80px;
+        margin: 0 auto;
+    }
+    .box13_wrap{
+        width: 999px;
+        height: 80px;
+        margin: 0 auto;
+        position: absolute;
+    }
+    .txtbox13{
+        margin: 0 auto;
+        position: absolute;
+    }
+    .title13{
+        display: block;
+        left: 48px;
+        top: 25px;
+        font-size: 19px;
+        color: white;
+        position: relative;
+    }
+    
+</style>
+<body>
+    <div class="box01">
+        <div class="sbox01">
+            <div class="txtbox">
+                <span class="title">김정운의<br>'바우하우스 이야기'</span>
+            </div>
+        </div>
+    </div>
+    <div class="box02">
+            <div class="sbox02">    
+                <div class="box02_wrap">
+                    <div class="txtbox02">
+                        <span class="title02">잡스, 바우하우스 훔쳐 소니 넘었다.</span>
+                    </div>
+                       <div class="txtbox002">
+                        <span class="title002">대학 입학 후 우연히 손에 넣게 된 소니 워크맨의 그 깜찍함은 내 <br>게
+                            충격이었다. 레너드 코언이 노래하는 거친 저음의 ‘소 롱 매리앤느 <br>
+                            (So Long, Marianne)’를 들었다. 전율이었다. 그때나 지금이나 나는 <br>
+                            이미 했던 이야기 ‘하고, 또 하는’사내들의 술자리를 극도로 혐오한다 <br>
+                            차라리 헤드폰을 끼고 음악을 듣는 편이 훨씬 행복하다. 소니 워크맨의 <br>
+                            충격 이후 생긴 습관이다. <br>
+                            <br>
+                            한동안 나는 소니의 전자제품을 사고 싶어 환장했다. 전자제품이 <br>
+                            어떻게 이렇게 아름다울 수 있을까 싶었다. 유학 시절에는 소니의 <br>
+                            트리니트론(Trinitron) TV가 그렇게 갖고 싶었다. <br>
+                            그러나 가격이 삼성·LG TV의 두 배였다. 3평 남짓한 기숙사에 사는 <br>
+                            유학생이 소유하기엔 너무 크고 사치스러운 물건이었다.<br>
+                            <br>
+                            그렇게 아름다웠던 소니의 물건들이 어느 순간부터 황당하게 변했다. <br>
+                            오늘날의 소니는 그때 나를 그렇게 흥분시켰던 그 소니가 더 이상은 <br>
+                            아니다. 회생 불가능해 보인다. </span>
+                       </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box03">
+        <div class="sbox03">
+            <div class="box03_wrap">
+                <div class="txtbox03">
+                    <span class="title03">그때,<br>마음을 빼앗았던 소니의 디자인</span>
+                </div>
+                <div class="txtbox031">
+                    <span class="title031">워크맨</span>
+                </div>
+                <div class="txtbox032">
+                    <span class="title032">트리니트론</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="box04">
+                <div class="sbox04">
+                    <div class="box04_wrap">
+                        <div class="txtbox04">
+                            <span class="title04">당시 소니는 어떻게 그토록 폼이 났을까. 소니의 전성기는<br> 
+                                1975년 독일의 전자회사 베가(Wega)를 인수한 후부터다.<br> 
+                                23년 설립된 베가는 역시 독일의 전자회사인 브라운(Braun)과<br> 
+                                앞서거니 뒤서거니 경쟁하며 둘 다 전자기기에 ‘디자인’이라<br> 
+                                새로운 개념을 연결시킨, 독일을 대표하는 기업이었다. 당시<br> 
+                                브라운에는 한스 구겔로트(Hans Gugelot·1920~65)와 디터<br> 
+                                람스(Dieter Rams·1932~)라는 전설적인 디자이너가 있었다.<br> 
+                                브라운에 뒤처져 있던 베가는 외부의 디자인 회사에 제품<br> 
+                                디자인을 맡겼다. <br>
+                                <br>
+                                승부수는 먹혔다. 베가의 제품들은 단숨에 브라운을 따라잡았다.<br> 
+                                이때 베가의 디자인을 도맡았던 이가 젊고 야심찬 하르트무트<br> 
+                                에슬링거(Hartmut Esslinger·1944~)였다.베가를 인수한 후 베가의 <br> 
+                                디자인 명성까지도 갖고 싶어 했던 소니는 ‘소니-베가(Sony-Wega)’<br> 
+                                라는 브랜드를 새로 만들었다.베가의 디자인을 도맡았던 에슬링거와의<br> 
+                                공동작업도 한동안 계속됐다(‘소니-베가’는 2005년 ‘브라비아(Bravia)’<br> 
+                                라는 새로운 브랜드가 생길 때까지 지속됐다). 유학시절 그렇게 갖고<br> 
+                                싶었던 소니의 트리니트론 TV는 바로 소니-베가의 에슬링거가 디자인한<br> 
+                                제품이었다.</span>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div>
+        <div class="box05">
+                <div class="sbox05">
+                    <div class="box05_wrap">
+                        <div class="txtbox05">
+                            <span class="title05">소니의 전자제품에 대한 내 관심이 식어갈 무렵 새 전자제품이 나타나 다시 <br>
+                                내 영혼을 빼앗았다. 애플이다. 나는 애플의 새 제품을 사고 싶어 안달했다. <br>
+                                애플 컴퓨터는 윈도 기반의 컴퓨터에 비해 두 배 가까이 비쌌다. 그래도 나는  <br>
+                                애플이 갖고 싶었다. 너무 예뻤기 때문이다. 당시 나를 환장하게 했던 애플  <br>
+                                컴퓨터의 디자인은 ‘백설공주(Snow White)’ 디자인이라 불렸다. 이것이 소니 <br>
+                                트리니트론을 디자인했던 하르트무트 에슬링거, 바로 그의 작품이었다는 것을 <br>
+                                한참 후에 알았다. 그는 82년부터 애플에 합류했다. 
+                                </span>
+                        </div>
+                        <div class="txtbox005">
+                            <span class="title005">스티브 잡스도 한때 ‘소니 마니아’였다. 잡스가 집의 차고를 나와 <br>
+                                처음으로 얻은 사무실은 소니 매장과 같은 건물이었다. <br>
+                                잡스는 수시로 소니 매장을 기웃거렸다. 그때 자신에게 새로운 <br>
+                                제품이 나올 때마다 브로슈어를 건네준 판매원을 잡스는 훗날<br>
+                                애플로 스카우트했다. 바로 그 ‘소니 스타일’을 개발한 에슬링거가 <br>
+                                이제 애플의 스티브 잡스와 손잡은 것이다.그러나 새로 영입한 <br>
+                                에슬링거에게 잡스가 요구한 것은 정작 ‘소니 스타일’이 아니었다. <br>
+                                ‘바우하우스 스타일’이었다.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+<div class="box06">
+    <div class="sbox06">
+        <div class="box06_wrap">
+            <div class="txtbox06">
+                <span class="title06">소니에서 <br> 바우하우스로
+                </div>
+            <div class="txtbox061">
+                <span class="title061">헤르베르트 바이에르 <br>Herbert Bayer</span>
+            </div>
+            <div class="txtbox062">
+                <span class="title062">1945</span>
+            </div>
+            <div class="txtbox063">
+                <span class="title063">바우하우스의 출판·광고국장을 지낸 <br>
+                    헤르베르트 바이어는 그래픽 디자이너 <br>
+                    겸 사진가 겸 건축가다. 기하학적 산세 <br>
+                    리프 활자체를 고안했고, 미국으로 <br>
+                    건너간 뒤인 45년 콜로라도 애스펀 <br>
+                    리조트를 설계했다.
+                    </span>
+            </div>
+            <div class="txtbox064">
+                <span class="title064"> 불세출의 산업 디자이너 디터람스는 독일 <br>
+                    전자회사 브라운에서 61년부터 <br>
+                    수석 디자이너로 일하며 미니멀한 <br>
+                    디자인의 정수를 선보였다. <br>
+                    '백설공주의 관'으로 불리는 복합 <br>
+                    음향기기 SK4도 그의 작품이다. <br>
+                    </span>
+            </div>
+            <div class="txtbox065">
+                <span class="title065">1961</span>
+            </div>
+            <div class="txtbox066">
+                <span class="title066">디터 람스 <br>Dieter Rams</span>
+            </div>
+            <div class="txtbox067">
+                <span class="title067">하르트무트 에슬링거 <br>Hartmut Esslinger</span>
+            </div>
+            <div class="txtbox068">
+                <span class="title068">1975</span>
+            </div>
+            <div class="txtbox069">
+                <span class="title069">대학 졸업 후 '프로그(Frog) 디자인'을 <br>
+                    설립한 하르트무트 에슬링거는 독일 전 <br>
+                    자회사 베가의 TV디자인으로 이름을 <br>
+                    알린다. 75년 베가가 소니에 인수된 뒤 <br>
+                    에는 소니의 명성을 드높인 트리니트론 <br>
+                    TV를 디자인했다. 82년 애플에 합류한 <br>
+                    그는 '백설공주' 스타일을 선보인다. <br>
+                    흰색 케이스, 간결하고 둥근모서리, 길고 <br>
+                    얇은 홈의 선들이 나란히 이어지는 것이 <br>
+                    특징으로 디터 람스의 작품들에서 <br>
+                    “훔쳐왔다”.
+                    </span>
+            </div>
+            <div class="txtbox0610">
+                <span class="title0610">
+                    소니 스타일을 추구했던 잡스는 <br>
+                    83년 애스펀 리조트에서 헤르 <br>
+                    베르트 바이에르의 디자인을 경험한 <br>
+                    뒤 바우하우스 스타일로의 <br>
+                    대전환을 천명한다.
+                    </span>
+            </div>
+            <div class="txtbox0611">
+                <span class="title0611">1983</span>
+            </div>
+            <div class="txtbox0612">
+                <span class="title0612">스티브 잡스 <br>Steve Jobs</span>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div>
+        <div class="box07">
+                <div class="sbox07">
+                    <div class="box07_wrap">
+                        <div class="txtbox07">
+                            <span class="title07">잡스는 83년 콜로라도 ‘애스펀(Aspen) 디자인 콘퍼런스’에서 행한 강연에서 <br>
+                                그때까지 자신이 그토록 좋아하던 소니를 “검은색이고 우중충하다”며 아주 <br>
+                                심하게 ‘디스’했다. 그리고 제품의 기능에 충실한 바우하우스 스타일로 <br>
+                                바꾸겠다고 선언한다. <br>
+                                <br>
+                                “현재 산업디자인의 흐름은 소니의 하이테크 스타일입니다. 주로 암회색이고, <br>
+                                가끔 검은색을 사용해 이상한 짓을 하기도 하지요. 그렇게 하는 건 쉽습니다. <br>
+                                하지만 위대하진 않습니다…우리가 하려는 것은 하이테크 제품을 만들어 <br>
+                                깔끔한 패키지에 담아 소비자들이 패키지만 보고도 하이테크 제품인 줄 알게 <br>
+                                하는 것입니다. 아름다운 백색 제품을 만들어 작고 깔끔한 패키지에 담을 <br>
+                                것입니다. 브라운사의 전자기기에서 느낄 수 있는 느낌을 제공하고자 <br>
+                                하는 겁니다.” (월터 아이작슨, 안진환 역, 『스티브 잡스』, 민음사, 2011년, <br>
+                                246~247쪽)</span>
+                        </div>
+                    </div>
+                </div>
+        </div>   
+    </div>
+    <div>
+        <div class="box08">
+                <div class="sbox08">
+                    <div class="box08_wrap">
+                        <div class="txtbox08">
+                            <span class="title08">잡스가 바우하우스의 디자인을 접한 것은 ‘애스펀 디자인 콘퍼<br>런스’가
+                                열렸던 바로 그곳이었다. 애스펀 리조트를 총괄 디자인한<br> 이는
+                                헤르베르트 바이에르(Herbert Bayer·1900~1985)다. 그는<br> 애스펀
+                                리조트 전체 조형을 위한 토목작업과 건물설계는 물론<br> 식당·호텔방의
+                                구석구석, 작은 소품에 이르기까지 직접 관여했다. <br>
+                                <br>
+                                바이에르는 독일 바우하우스 철학을 그 누구보다도 완성된 형태로<br>
+                                체험한 사람이었다. 그는 바이마르의 바우하우스에서 21년부터<br>
+                                25년까지 학생으로 공부했다. 바우하우스가 데사우로 이사한
+                                후부터<br>는 인쇄공방의 선생으로 일했다. 오늘날 바우하우스식
+                                타이포그래피<br>로 여겨지는 소문자의 산세리프 글자체가 바이에르의
+                                작품이다.<br> 그는 이 글자체를 ‘유니버설 타입’이라 불렀다. 그는
+                                오늘날<br> 우리가 ‘그래픽 디자인’이라고 부르는 영역의 창시자로 
+                                여겨진다<br>(잡스는 자신이 중퇴한 리드대학교에서 배운 것이라고는 
+                                ‘타이포<br>그래피’ 수업뿐이었다고 수시로 이야기했다. 그때 잡스가 
+                                인상적으로<br> 느꼈던 산세리프체를 대중화시킨 이가 바로 바이에르다).</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div>
+        <div class="box09">
+                <div class="sbox09">
+                    <div class="box09_wrap">
+                        <div class="txtbox09">
+                            <span class="title09">나치의 억압을 피해 38년 미국 뉴욕으로 이주한 바이에르는 45년 대규모 프로젝트를 <br>
+                                제안받는다. 바로 애스펀 리조트의 설계였다. 리조트가 건립되고 수십 년이 지난 후 <br>
+                                잡스는 이곳에서 바이에르가 디자인한 ‘바우하우스식 깔끔한 디자인’에 깊은 감명을 <br>
+                                받은 것이다. <br>
+                                <br>
+                                사실 소니에 대한 잡스의 태도는 사뭇 모순적이다. 83년의 ‘소니 디스’ 발언 이후에도 <br>
+                                잡스는 애플의 디자이너들에게 수시로 “만약 소니라면 어떻게 만들까?”라고 물었다. <br>
+                                아이폰의 시제품을 만들 때에는 이름을 ‘소니 스타일’이라고 붙여가면서까지 소니를 <br>
+                                흉내 내려 했다. ‘소니 디스 사건’이 20년도 더 지난 2006년의 일이다. 잡스의 ‘재팬 <br>
+                                스타일’에 대한 관심은 죽을 때까지 지속되었다. 그의 트레이드마크인 ‘블랙 터틀넥’ <br>
+                                또한 일본 디자이너 이세이 미야케의 작품이다.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div>
+        <div class="box10">
+                <div class="sbox10">
+                    <div class="box10_wrap">
+                        <div class="txtbox10">
+                            <span class="title10">아무튼 ‘소니에서 바우하우스로(from Sony to Bauhaus)’라는 잡스의 <br> 
+                                83년 선언은 이제 막 애플에 합류한 에슬링거에게 큰 과제가 됐다. <br>
+                                잡스는 피카소가 남긴 “유능한 예술가는 모방하고, 위대한 예술가는 <br>
+                                훔친다(Good artists copy, great artists steal)”는 이야기를 수시로 했다. <br>
+                                에슬링거는 잡스가 원했던 바로 그 ‘위대한 예술가’였다. 잘 ‘훔쳐왔다’는 <br>
+                                이야기다. ‘소니 스타일’ 에서 벗어나 ‘바우하우스 스타일’로 옮겨가 <br>
+                                달라는 잡스의 요청을 받은 에슬링거는 독일 브라운사의 디터 람스에게서 <br>
+                                ‘훔쳐왔다’.</span>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div>
+        <div class="box11">
+                <div class="sbox11">
+                    <div class="box11_wrap">
+                        <div class="txtbox11">
+                            <span class="title11">잡스 손잡은 에슬링거<br>‘디터 람스’를 훔치다.</span>
+                        </div>
+                        <div class="txtbox111">
+                            <span class="title111">훔쳐온 제품 디자인의 명칭도 하필 ‘백설공주’였다. 디터 람스가 디자인한 제품 중 가장 히트 친 복합음향기기 <br>
+                                SK 시리즈의 별명이 바로 ‘백설공주의 관(棺)’이었기 때문이다. 턴테이블과 진공관 라디오를 일체형으로 개발한 <br>
+                               브라운의 SK 시리즈는 독일 특유의 둔탁한 느낌은 찾아볼 수 없는 전혀 다른 모습의 전자기기였다. 전체적으로 <br>
+                               하얗고,아크릴로 된 뚜껑으로 내부가 들여다보이기에 이런 별명을 얻었다. 거기에 스피커를 장식한 가늘고 긴 <br>
+                               세로의 선들은 기계를 더욱 깔끔하고 날렵하게 보이게 해주었다. 에슬링거의 애플 컴퓨터는 디터 람스의 이 같은 <br>
+                               디자인적 특징을 그대로 훔쳐온 것이다. <br>
+                                <br>
+                                디터 람스는 바우하우스의 전통을 다시 세우기 위해 전쟁 후 서독에 설립된 ‘울름조형학교(Hochschule für <br>
+                                Gestaltung Ulm)’와 아주 깊은 관련이 있다. 에슬링거의 뒤를 이어 오늘날까지 애플의 디자인을 책임지고 있는 <br>
+                                조너선 아이브(Jonathan Ive) 또한 디터 람스의 디자인을 ‘훔쳐왔다’는 사실은 널리 알려져 있다. 20세기 후반 <br>
+                                가장 혁신적이라는 평가를 받는 소니와 애플의 디자인은 이런 식으로 1919년 설립된 바우하우스에 뿌리를 <br>
+                                내리고 있는 것이다. </span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="box12">
+                <div class="sbox12">
+                    <div class="box12_wrap">
+                        <div class="txtbox12">
+                            <span class="title12">김정운 문화심리학자</span>
+                        </div>
+                        <div class="txtbox121">
+                            <span class="title121">베를린자유대학교에서 문화심리학으로 디플롬, 박사학위를 취득한 후 베를린자유대 전임강사, <br>
+                                명지대 교수를 역임했다. 2012년, 교수를 사임하고 일본 교토 사가예술대에서 일본화를 전공했다. <br>
+                                2016년 귀국 후, 여수에 살며 그림 그리고, 글 쓰고, 작은 배를 타고나가 눈먼 고기도 잡는다. 저서로<br>
+                                『에디톨로지』『가끔은 격하게 외로워야 한다』『남자의 물건』등이 있다.
+                                </span>
+                        </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <div>
+        <div class="box13">
+                <div class="sbox13">
+                    <div class="box13_wrap">
+                        <div class="txtbox13">
+                            <span class="title13">출처:중앙일보</span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
